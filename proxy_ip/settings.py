@@ -56,6 +56,7 @@ COOKIES_ENABLED = False
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'proxy_ip.middlewares.RandomUserAgentMiddleware': 100,
 }
 
 # Enable or disable extensions
